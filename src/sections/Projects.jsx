@@ -62,16 +62,16 @@ const Projects = () => {
                         {currentProject.href && (
                             <a className="flex items-center gap-2 cursor-pointer text-white-600" href={currentProject.href} target="_blank" rel="noreferrer">
                                 <p>{currentProject.hrefLabel || 'Check Live Site'}</p>
-                                <img src="/assets/arrow-up.png" className="w-3 h-3" alt="arrow" />
+                                <img src={`${import.meta.env.BASE_URL}assets/arrow-up.png`} className="w-3 h-3" alt="arrow" />
                             </a>
                         )}
                     </div>
                     <div className="flex justify-between items-center mt-7">
                         <button className="arrow-btn" onClick={() => handleNavigation('previous')}>
-                            <img src="/assets/left-arrow.png" alt="left-arrow" className="w-4 h-4" />
+                            <img src={`${import.meta.env.BASE_URL}assets/left-arrow.png`} alt="left-arrow" className="w-4 h-4" />
                         </button>
                         <button className="arrow-btn" onClick={() => handleNavigation('next')}>
-                            <img src="/assets/right-arrow.png" alt="right-arrow" className="w-4 h-4" />
+                            <img src={`${import.meta.env.BASE_URL}assets/right-arrow.png`} alt="right-arrow" className="w-4 h-4" />
                         </button>
                     </div>
                 </div>
@@ -85,10 +85,10 @@ const Projects = () => {
                     {images.length > 1 && (
                         <div className="flex justify-between items-center w-full">
                             <button className="arrow-btn" onClick={() => handleImageNavigation('previous')}>
-                                <img src="/assets/left-arrow.png" alt="left-arrow" className="w-4 h-4" />
+                                <img src={`${import.meta.env.BASE_URL}assets/left-arrow.png`} alt="left-arrow" className="w-4 h-4" />
                             </button>
                             <button className="arrow-btn" onClick={() => handleImageNavigation('next')}>
-                                <img src="/assets/right-arrow.png" alt="right-arrow" className="w-4 h-4" />
+                                <img src={`${import.meta.env.BASE_URL}assets/right-arrow.png`} alt="right-arrow" className="w-4 h-4" />
                             </button>
                         </div>
                     )}
