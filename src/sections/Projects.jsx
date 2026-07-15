@@ -41,7 +41,7 @@ const Projects = () => {
     }
 
     return (
-        <section className="c-space my-20">
+        <section className="c-space my-20" id="work">
             <p className="head-text">My Work</p>
             <p className="text-white-500 mt-3">
                 These are my main projects. I've built more, check out my GitHub for the rest: <a href="https://github.com/Hassan-Alzouri" target="_blank" rel="noreferrer" className="text-white underline hover:text-neutral-300 transition-colors">github.com/Hassan-Alzouri</a>

@@ -31,7 +31,7 @@ const Experience = () => {
     };
 
     return (
-        <section className="c-space my-20">
+        <section className="c-space my-20" id="experience">
             <div className="w-full text-white-600">
                 <h3 className="head-text">My Work Experience</h3>
                 <p className="text-white-500 mt-3 mb-2">
