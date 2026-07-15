@@ -7,6 +7,16 @@ const Experience = () => {
 
     const images = active.images || [];
 
+    // Helper to safely format paths from constants to include GitHub Pages base URL
+    const getAssetPath = (path) => {
+        if (!path) return '';
+        if (typeof path !== 'string' || path.startsWith('http') || path.startsWith('data:')) {
+            return path;
+        }
+        const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+        return `${import.meta.env.BASE_URL}${cleanPath}`;
+    };
+
     useEffect(() => {
         setImageIndex(0);
     }, [active]);
@@ -29,8 +39,9 @@ const Experience = () => {
                 </p>
                 <div className="work-container">
                     <div className="work-canvas flex flex-col items-center justify-center p-5 gap-4">
+                        {/* Updated with getAssetPath */}
                         <img
-                            src={images[imageIndex]}
+                            src={getAssetPath(images[imageIndex])}
                             alt={active.name}
                             className="w-full h-[260px] object-cover rounded-lg"
                         />
@@ -38,9 +49,11 @@ const Experience = () => {
                         {images.length > 1 && (
                             <div className="flex justify-between items-center w-full mt-2">
                                 <button className="arrow-btn" onClick={() => handleNavigation('previous')}>
+                                    {/* Static icon path updated with BASE_URL */}
                                     <img src={`${import.meta.env.BASE_URL}assets/left-arrow.png`} alt="left-arrow" className="w-4 h-4" />
                                 </button>
                                 <button className="arrow-btn" onClick={() => handleNavigation('next')}>
+                                    {/* Static icon path updated with BASE_URL */}
                                     <img src={`${import.meta.env.BASE_URL}assets/right-arrow.png`} alt="right-arrow" className="w-4 h-4" />
                                 </button>
                             </div>
@@ -56,7 +69,8 @@ const Experience = () => {
                                 >
                                     <div className="flex flex-col h-full justify-start items-center py-2">
                                         <div className="work-content_logo bg-white p-2 flex items-center justify-center">
-                                            <img src={exp.icon} alt="logo" className="w-full h-full object-contain rounded-lg" />
+                                            {/* Updated with getAssetPath */}
+                                            <img src={getAssetPath(exp.icon)} alt="logo" className="w-full h-full object-contain rounded-lg" />
                                         </div>
                                         <div className="work-content_bar" />
                                     </div>
