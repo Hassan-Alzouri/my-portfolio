@@ -241,17 +241,16 @@ export const workExperiences = [
         title: "Worked as part of a team building an AI Copilot for equipment inspection deferral decisions in oil & gas facilities — combining a rule-based risk engine (API 571/510/580) with a Random Forest model, cutting evaluation time by 60%.",
         icon: '/assets/ai.jfif',
         images: [
-            '/assets/experience/mecc-1.jpeg',
-            '/assets/experience/mecc-certificate.png',
             '/assets/experience/mecc-2.jpeg',
+            '/assets/experience/mecc-certificate.png',
             '/assets/experience/mecc-3.jpeg',
-            '/assets/experience/mecc-4.jpeg',
+
         ],
     },
     {
         id: 4,
         name: 'Shahn — Streamathon (KFUPM)',
-        pos: 'Team Lead',
+        pos: '',
         duration: '2025',
         title: "Worked as part of a team building Shahn, a peer-to-peer EV charger marketplace, in under 24 hours — building the frontend, Supabase schema, and payment/webhook integration. An Aramco representative called the execution phenomenal.",
         icon: '/assets/ev.jfif',
