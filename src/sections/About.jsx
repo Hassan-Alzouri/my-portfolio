@@ -34,7 +34,26 @@ const About = () => {
 
                 <div className="col-span-1 xl:row-span-3">
                     <div className="grid-container">
-                        <img src={`${import.meta.env.BASE_URL}assets/grid2.png`} alt="grid-2" className="w-full sm:h-[276px] h-fit object-contain" />
+                        <div className="w-full h-[200px] flex items-center justify-center">
+                            <div className="grid grid-cols-3 gap-3">
+                                {[
+                                    { label: 'C++', color: '#EF4444' },
+                                    { label: 'C#', color: '#EAB308' },
+                                    { label: 'JS', color: '#22C55E' },
+                                    { label: 'Py', color: '#3B82F6' },
+                                    { label: 'SQL', color: '#A855F7' },
+                                    { label: 'React', color: '#06B6D4' },
+                                ].map((tech, i) => (
+                                    <div
+                                        key={i}
+                                        className="w-14 h-14 rounded-full flex items-center justify-center text-xs font-bold text-black shadow-lg"
+                                        style={{ backgroundColor: tech.color }}
+                                    >
+                                        {tech.label}
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
                         <div>
                             <p className="grid-headtext">Tech Stack</p>
                             <p className="grid-subtext">
