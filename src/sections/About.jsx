@@ -22,7 +22,7 @@ const About = () => {
                         <div>
                             <p className="grid-headtext">Hi, I am Hassan Mohammed Alzourei</p>
                             <p className="grid-subtext">
-                                I'm a Computer Science student at Imam Abdulrahman Bin Faisal University (2021–2026).
+                                I'm a Computer Science graduate from Imam Abdulrahman Bin Faisal University (2021–2026).
                                 I build secure, full-stack web applications with authentication, role-based access
                                 control, and database-driven architectures. I have hands-on experience through
                                 real production projects and an AI hackathon, and I'm now looking for a full-time
@@ -76,25 +76,25 @@ const About = () => {
                 <div className="xl:col-span-2 xl:row-span-3">
                     <div className="grid-container">
                         <p className="grid-headtext">Certifications & Achievements</p>
-                        <div className="flex flex-col gap-3 mt-2">
-                            <div className="flex items-center justify-between border-b border-black-300 pb-2">
-                                <span className="grid-subtext text-white">Structuring Machine Learning Projects</span>
-                                <span className="text-xs text-neutral-500">DeepLearning.AI</span>
-                            </div>
-                            <div className="flex items-center justify-between border-b border-black-300 pb-2">
-                                <span className="grid-subtext text-white">Linear Algebra for Machine Learning & Data Science</span>
-                                <span className="text-xs text-neutral-500">DeepLearning.AI</span>
-                            </div>
-                            <div className="flex items-center justify-between border-b border-black-300 pb-2">
-                                <span className="grid-subtext text-white">Virtual AI Bootcamp (30 PDHs)</span>
-                                <span className="text-xs text-neutral-500">MECC · Aramco, NVIDIA</span>
-                            </div>
-                            <div className="flex items-center justify-between">
-                                <span className="grid-subtext text-white">Introduction to Data Science in Python</span>
-                                <span className="text-xs text-neutral-500">University of Michigan</span>
-                            </div>
+                        <div className="grid sm:grid-cols-2 gap-3 mt-3">
+                            {[
+                                { name: 'Structuring Machine Learning Projects', issuer: 'DeepLearning.AI', initials: 'DL' },
+                                { name: 'Linear Algebra for ML & Data Science', issuer: 'DeepLearning.AI', initials: 'DL' },
+                                { name: 'Virtual AI Bootcamp (30 PDHs)', issuer: 'MECC · Aramco, NVIDIA', initials: 'AI' },
+                                { name: 'Intro to Data Science in Python', issuer: 'University of Michigan', initials: 'UM' },
+                            ].map((cert, i) => (
+                                <div key={i} className="flex items-start gap-3 bg-black-300/50 rounded-lg p-3 hover:bg-black-300 transition-colors">
+                                    <div className="w-9 h-9 shrink-0 rounded-full bg-white/10 border border-white/10 flex items-center justify-center text-xs font-semibold text-white">
+                                        {cert.initials}
+                                    </div>
+                                    <div>
+                                        <p className="text-sm text-white font-medium leading-snug">{cert.name}</p>
+                                        <p className="text-xs text-neutral-500 mt-0.5">{cert.issuer}</p>
+                                    </div>
+                                </div>
+                            ))}
                         </div>
-                     <a
+                    <a
                         href="https://www.linkedin.com/in/hassan-alzourei-2001b1324/details/certifications/"
                         target="_blank"
                         rel="noreferrer"
