@@ -29,16 +29,19 @@ This portfolio consolidates my projects, professional experience, and hackathon 
 | Deployment | GitHub Pages, GitHub Actions (CI/CD) |
 
 ## Project Structure
+```text
 my-portfolio/
-├── public/
-│   └── assets/              # Images, icons, CV, project screenshots
-├── src/
-│   ├── components/          # Reusable components (Button, Navbar, CanvasLoader, etc.)
-│   ├── sections/            # Page sections (Hero, About, Projects, Experience, Contact)
-│   └── constants/           # Static data (projects, work experience, nav links)
 ├── .github/workflows/
-│   └── deploy.yml           # CI/CD pipeline for GitHub Pages
-└── index.html
+│   └── deploy.yml          # Automated CI/CD pipeline
+├── public/
+│   └── assets/             # Images, static icons, CV, and media assets
+├── src/
+│   ├── components/         # Reusable UI elements (Buttons, Loader, Navbar)
+│   ├── sections/           # Modular page sections (Hero, About, Projects, Experience, Contact)
+│   └── constants/          # Static content catalogs (Project data, experiences, links)
+├── index.html
+└── package.json
+
 ## Getting Started
 
 ### Prerequisites
