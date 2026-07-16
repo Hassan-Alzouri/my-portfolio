@@ -61,7 +61,7 @@ const Hero = () => {
 
                     {/* CV download */}
                     <div className="flex justify-center lg:justify-start">
-                        <a href="/assets/cv.pdf" download className="w-fit">
+                        <a href={`${import.meta.env.BASE_URL}assets/cv.pdf`} download className="w-fit">
                             <Button name="Download CV" containerClass="w-fit" />
                         </a>
                     </div>
