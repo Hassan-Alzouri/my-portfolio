@@ -1,34 +1,51 @@
-# Hassan Alzourei — Portfolio
+# 🪐 Hassan Alzourei — 3D Interactive Portfolio
 
-A 3D, interactive personal portfolio built to showcase my work as a full-stack software engineer — featuring a real-time 3D scene, smooth scroll-based animations, and a fully responsive design.
+<div align="center">
+  <p align="center">
+    A 3D, interactive personal portfolio built to showcase my work as a full-stack software engineer — featuring a real-time 3D scene, smooth scroll-based animations, and a fully responsive design.
+  </p>
+  
+  [![Live Site](https://img.shields.io/badge/Live_Demo-View_Site-brightgreen?style=for-the-badge&logo=google-chrome&logoColor=white)](https://hassan-alzouri.github.io/my-portfolio/)
+  [![GitHub](https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github)](https://github.com/Hassan-Alzouri)
+  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/hassan-alzourei-2001b1324/)
+</div>
 
-**Live site:** [hassan-alzouri.github.io/my-portfolio](https://hassan-alzouri.github.io/my-portfolio/)
+---
 
-## Overview
+## 📌 Overview
 
-This portfolio consolidates my projects, professional experience, and hackathon achievements into a single interactive site — built as an alternative to a static resume page. It features a 3D animated hero scene, an interactive work experience timeline with photos and certificates, a filterable project showcase, and a working contact form.
+This portfolio consolidates my projects, professional experience, and hackathon achievements into an immersive, interactive digital space — built as a dynamic alternative to a static resume. 
 
-## Features
+It features a custom **3D animated hero scene**, an **interactive work experience timeline** highlighting key milestones and certificates, a **filterable project showcase**, and a **fully integrated contact system**.
 
-- 🖥️ **Interactive 3D hero scene** — built with React Three Fiber and Three.js, reacts to cursor movement
-- 📱 **Fully responsive** — optimized layouts for mobile, tablet, and desktop
-- 💼 **Work Experience carousel** — click through roles and hackathons to view related photos and certificates
-- 🚀 **Project showcase** — browse featured projects with live demos, GitHub links, and image galleries
-- ✉️ **Working contact form** — powered by EmailJS, no backend required
-- 🎬 **Smooth animations** — GSAP-powered scroll and interaction animations throughout
-- 🌐 **Deployed via GitHub Actions** — automatic build and deploy to GitHub Pages on every push to `main`
+---
 
-## Tech Stack
+## ✨ Features
 
-| Layer | Technology |
-|---|---|
-| Framework | React, Vite |
-| 3D / Animation | React Three Fiber, Three.js, GSAP, @react-three/drei |
-| Styling | Tailwind CSS |
-| Contact Form | EmailJS |
-| Deployment | GitHub Pages, GitHub Actions (CI/CD) |
+*   🖥️ **Interactive 3D Hero Scene** – Rendered with React Three Fiber & Three.js, responding dynamically to cursor movement.
+*   🎬 **Fluid Motion Graphics** – GSAP-powered scroll triggers and physics-based interactions throughout the page.
+*   💼 **Dynamic Work Timeline** – Carousel-based project and career log showcasing verifiable photos, milestones, and certificates.
+*   🚀 **Interactive Project Showcase** – Filterable project cards with live demos, code repositories, and asset galleries.
+*   ✉️ **Direct Messaging** – Serverless contact form powered by EmailJS, delivering client messages straight to my inbox.
+*   📱 **Fully Responsive** – Tailored, performant layouts built for smooth experiences on mobile, tablet, and ultra-wide screens.
+*   🌐 **Automated CI/CD** – Built and instantly deployed to GitHub Pages via GitHub Actions on every push to `main`.
 
-## Project Structure
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technologies |
+| :--- | :--- |
+| **Core Framework** | `React` • `Vite` • `TypeScript` |
+| **3D & Animation** | `React Three Fiber` • `Three.js` • `GSAP` • `@react-three/drei` |
+| **Styling** | `Tailwind CSS` |
+| **Integrations** | `EmailJS` |
+| **CI / CD** | `GitHub Actions` • `GitHub Pages` |
+
+---
+
+## 📂 Project Structure
+
 ```text
 my-portfolio/
 ├── .github/workflows/
@@ -41,43 +58,61 @@ my-portfolio/
 │   └── constants/          # Static content catalogs (Project data, experiences, links)
 ├── index.html
 └── package.json
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js 18+
-
-### Setup
-
-```bash
-git clone https://github.com/Hassan-Alzouri/my-portfolio.git
-cd my-portfolio
-npm install --legacy-peer-deps
 ```
 
-Create a `.env` file in the root with your EmailJS credentials (used by the Contact form):
-VITE_EMAILJS_SERVICE_ID=your-service-id
-VITE_EMAILJS_TEMPLATE_ID=your-template-id
-VITE_EMAILJS_PUBLIC_KEY=your-public-key
+---
 
-Run the dev server:
+## 🚀 Getting Started
 
-```bash
-npm run dev
-```
+### 📋 Prerequisites
 
-The app will be running at `http://localhost:5173`.
+Ensure you have **Node.js 18+** installed on your system.
 
-### Build & Deploy
+### ⚙️ Setup & Installation
 
-```bash
-npm run build
-```
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Hassan-Alzouri/my-portfolio.git
+   cd my-portfolio
+   ```
 
-Deployment is automated via GitHub Actions (`.github/workflows/deploy.yml`) — every push to `main` triggers a build and deploy to GitHub Pages.
+2. **Install dependencies:**
+   ```bash
+   npm install --legacy-peer-deps
+   ```
 
-## Author
+3. **Configure Environment Variables:**
+   Create a `.env` file in the root directory and append your EmailJS keys:
+   ```env
+   VITE_EMAILJS_SERVICE_ID=your_service_id
+   VITE_EMAILJS_TEMPLATE_ID=your_template_id
+   VITE_EMAILJS_PUBLIC_KEY=your_public_key
+   ```
 
-**Hassan Mohammed Alzourei**
-[Portfolio](https://hassan-alzouri.github.io/my-portfolio/) · [GitHub](https://github.com/Hassan-Alzouri) · [LinkedIn](https://www.linkedin.com/in/hassan-alzourei-2001b1324/) · Hassan-Alzourei@outlook.com
+4. **Launch the Development Server:**
+   ```bash
+   npm run dev
+   ```
+   > 🌐 Your local environment will be up and running at `http://localhost:5173`.
+
+---
+
+## 📦 Deployment & Build
+
+* **Compile optimized production build:**
+  ```bash
+  npm run build
+  ```
+
+> ⚙️ **Note:** Manual deployments are unnecessary. The integrated **GitHub Actions pipeline** automatically triggers, builds, and pushes live updates to GitHub Pages on every commit directly to the `main` branch.
+
+---
+
+## ✉️ Let's Connect
+
+Feel free to reach out via any of the platforms below!
+
+*   **Email:** [Hassan-Alzourei@outlook.com](mailto:Hassan-Alzourei@outlook.com)
+*   **LinkedIn:** [Hassan Alzourei](https://www.linkedin.com/in/hassan-alzourei-2001b1324/)
+*   **GitHub:** [@Hassan-Alzouri](https://github.com/Hassan-Alzouri)
+*   **Live Portfolio:** [hassan-alzouri.github.io/my-portfolio](https://hassan-alzouri.github.io/my-portfolio/)
