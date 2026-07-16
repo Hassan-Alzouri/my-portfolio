@@ -75,38 +75,55 @@ const About = () => {
 
                 <div className="xl:col-span-2 xl:row-span-3">
                     <div className="grid-container">
-                        <img src={`${import.meta.env.BASE_URL}assets/grid3.png`} alt="grid-3" className="w-full sm:h-[266px] h-fit object-contain" />
-                        <div>
-                            <p className="grid-headtext">My passion for building</p>
-                            <p className="grid-subtext">
-                                I love turning ideas into working products — from a production management system
-                                at King Fahad Medical City to an AI-driven inspection system built in a 24-hour
-                                hackathon. That project placed 1st, and it's the kind of fast, hands-on problem
-                                solving that keeps me hooked on code.
-                            </p>
+                        <p className="grid-headtext">Certifications & Achievements</p>
+                        <div className="flex flex-col gap-3 mt-2">
+                            <div className="flex items-center justify-between border-b border-black-300 pb-2">
+                                <span className="grid-subtext text-white">Structuring Machine Learning Projects</span>
+                                <span className="text-xs text-neutral-500">DeepLearning.AI</span>
+                            </div>
+                            <div className="flex items-center justify-between border-b border-black-300 pb-2">
+                                <span className="grid-subtext text-white">Linear Algebra for Machine Learning & Data Science</span>
+                                <span className="text-xs text-neutral-500">DeepLearning.AI</span>
+                            </div>
+                            <div className="flex items-center justify-between border-b border-black-300 pb-2">
+                                <span className="grid-subtext text-white">Virtual AI Bootcamp (30 PDHs)</span>
+                                <span className="text-xs text-neutral-500">MECC · Aramco, NVIDIA</span>
+                            </div>
+                            <div className="flex items-center justify-between">
+                                <span className="grid-subtext text-white">Introduction to Data Science in Python</span>
+                                <span className="text-xs text-neutral-500">University of Michigan</span>
+                            </div>
                         </div>
-                    </div>
+                     <a
+                        href="https://www.linkedin.com/in/hassan-alzourei-2001b1324/details/certifications/"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="grid-subtext text-white underline hover:text-neutral-300 transition-colors mt-4 inline-block"
+                        >
+                        View all certifications on LinkedIn →
+                    </a>
                 </div>
+            </div>
 
-                <div className="col-span-1 xl:row-span-2">
-                    <div className="grid-container">
-                        <img src={`${import.meta.env.BASE_URL}assets/grid4.png`} alt="grid-4" className="w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top" />
-                        <div className="space-y-4">
-                            <p className="grid-subtext text-center">Let's talk</p>
-                            <button
-                                onClick={handleCopy}
-                                className="flex items-center justify-center gap-2 w-full bg-black-300 hover:bg-black-500 transition-colors rounded-lg py-3 px-4"
-                            >
-                                <img src={hasCopied ? `${import.meta.env.BASE_URL}assets/tick.svg` : `${import.meta.env.BASE_URL}assets/copy.svg`} alt="copy" className="w-4 h-4" />
-                                <span className="text-sm sm:text-base font-medium text-white">
+            <div className="col-span-1 xl:row-span-2">
+                <div className="grid-container">
+                    <img src={`${import.meta.env.BASE_URL}assets/grid4.png`} alt="grid-4" className="w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top" />
+                    <div className="space-y-4">
+                        <p className="grid-subtext text-center">Let's talk</p>
+                        <button
+                            onClick={handleCopy}
+                            className="flex items-center justify-center gap-2 w-full bg-black-300 hover:bg-black-500 transition-colors rounded-lg py-3 px-4"
+                        >
+                            <img src={hasCopied ? `${import.meta.env.BASE_URL}assets/tick.svg` : `${import.meta.env.BASE_URL}assets/copy.svg`} alt="copy" className="w-4 h-4" />
+                            <span className="text-sm sm:text-base font-medium text-white">
                                     Hassan-Alzourei@outlook.com
                                 </span>
-                            </button>
-                        </div>
+                        </button>
                     </div>
                 </div>
             </div>
-        </section>
-    )
+        </div>
+</section>
+)
 }
 export default About
