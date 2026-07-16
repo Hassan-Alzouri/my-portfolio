@@ -100,14 +100,9 @@ const About = () => {
                                 </div>
                             ))}
                         </div>
-                    <a
-                        href="https://www.linkedin.com/in/hassan-alzourei-2001b1324/details/certifications/"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="grid-subtext text-white underline hover:text-neutral-300 transition-colors mt-4 inline-block"
-                        >
-                        View all certifications on LinkedIn →
-                    </a>
+                        <a href="https://www.linkedin.com/in/hassan-alzourei-2001b1324/details/certifications/" target="_blank" rel="noreferrer" className="w-full">
+                            <Button name="View All Certifications" containerClass="w-full mt-10" />
+                        </a>
                 </div>
             </div>
 
