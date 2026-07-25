@@ -105,8 +105,8 @@ export const myProjects = [
         title: 'QuickShow — Movie Ticket Booking System',
         desc: 'A full-stack MERN movie ticket booking platform with seat selection, secure payment processing, and an admin dashboard for managing movies and showtimes.',
         subdesc: 'Built with the MERN stack, integrating Stripe for payments and a modern, responsive UI with automated email notifications.',
-        href: 'https://github.com/Hassan-Alzouri/QuickShow',
-        hrefLabel: 'View on GitHub',
+        href: 'https://quickshow-five-umber.vercel.app/',
+        hrefLabel: 'View Live Demo',
         images: Array.from({ length: 10 }, (_, i) => `/assets/projects/movie-booking/movie-booking-${i + 1}.png`),
         logo: '/assets/logos/project-logo-movie.png',
         logoStyle: {
